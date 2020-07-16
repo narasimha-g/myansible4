@@ -6,7 +6,7 @@
    - name: i want ping my all nodes 
      ping: 
 
-   - name: install apche2
+   - name: install ubuntu servers 
      apt: 
       name: "{{item}}"
       state: present 
@@ -15,4 +15,11 @@
       - git 
       - wget 
       - tree 
-     #when: ansible_os_family=="Debian"
+     when: ansible_os_family=="Debian"
+
+   - name: install yum servers 
+     yum:
+      name: "{{item}}"
+      state: latest 
+     loop: 
+      - httpd
