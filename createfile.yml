@@ -3,13 +3,13 @@
    ping: 
  - name: create files 
    file:
-      path: /home/narasimha/file1
+      path: /home/narasimha/file2
       state: touch
    when: ansible_os_family=="RedHat"
     
  - name: create files 
    file:
-      path: /home/narasimha/dir1
+      path: /home/narasimha/dir2
       state: directory 
    when: ansible_os_family=="RedHat"
 
