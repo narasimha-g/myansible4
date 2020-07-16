@@ -1,0 +1,16 @@
+- hosts: 172.31.1.127
+  become: yes
+  gather_facts: yes
+  tasks: 
+   - name: i want ping my all nodes 
+     ping: 
+
+   - name: install httpd 
+     yum: 
+      name: httpd 
+      state: present
+      
+   - name: service httpd 
+     service: 
+      name: httpd 
+      state: started 

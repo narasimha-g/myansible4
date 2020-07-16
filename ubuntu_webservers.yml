@@ -24,6 +24,11 @@
    - name: install tree 
      apt: 
       name: tree 
-      state: present 
+      state: present
+
+   - name: service  webserver
+     service: 
+      name: apache2  
+      state: started 
 
  
