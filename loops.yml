@@ -23,4 +23,7 @@
       state: latest 
      loop: 
       - httpd
+      - nginx
+      - postgresql
+      - postgresql-server
      when: ansible_os_family=="RedHat"
