@@ -10,4 +10,10 @@
       path: /home/narasimha/file1
       state: touch
      when: ansible_os_family=="RedHat"
+    
+   - name: create files 
+     file:
+      path: /home/narasimha/dir1
+      state: directory 
+     when: ansible_os_family=="RedHat"
 
