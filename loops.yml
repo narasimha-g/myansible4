@@ -23,3 +23,4 @@
       state: latest 
      loop: 
       - httpd
+     when: ansible_os_family=="Redhat"
