@@ -9,5 +9,5 @@
      file:
       path: /home/narasimha
       state: touch
-     when: ansible_os_family=="Debian"
+     when: ansible_os_family=="RedHat"
 
