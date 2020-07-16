@@ -9,7 +9,5 @@
      file:
       path: /home/narasimha
       state: touch
-      owner: narasimha
-      group: simha
-      mode: '2020'
      when: ansible_os_family=="Debian"
+
