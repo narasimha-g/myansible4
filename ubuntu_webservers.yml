@@ -1,0 +1,29 @@
+--- 
+ - hosts: all 
+   become: yes
+   gather_facts: yes
+   tasks: 
+   - name: i want ping my all nodes 
+     ping: 
+
+   - name: install apche2
+     apt: 
+      name: apache2
+      state: present 
+
+   - name: install git 
+     apt: 
+      name: git 
+      state: present 
+
+   - name: install wget 
+     apt: 
+      name: wget 
+      state: present 
+
+   - name: install tree 
+     apt: 
+      name: tree 
+      state: present 
+
+ 
