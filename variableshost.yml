@@ -2,9 +2,7 @@
  - hosts: webservers 
    become: yes
    gather_facts: yes
-   vars:
-    ubuntuwebserver: apache2
-    redhatwebserver: httpd 
+  
    tasks: 
    - name: i want ping my all nodes 
      ping: 
