@@ -55,3 +55,7 @@
       state: started 
      when: ansible_os_family=="RedHat"
      tags: service  redhat
+
+     # ansible-playbook -i myhosts tags.yml
+     # ansible-playbook -i myhosts tags.yml --tags  "install tree , service rehat"
+     # ansible-playbook -i myhosts tags.yml --skip-tags "install apache2 , service redhat ,install redhat"
