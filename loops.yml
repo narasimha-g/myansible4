@@ -10,7 +10,7 @@
      apt: 
       name: "{{item}}"
       state: present 
-      loop: 
+     loop: 
       - apache2 
       - git 
       - wget 
