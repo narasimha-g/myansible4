@@ -1,2 +1,16 @@
 172.31.9.197  # node1 ubuntu
 172.31.1.127  # node2 redhat
+
+[webservers]
+172.31.9.197  # node1 ubuntu
+172.31.1.127  # node2 redhat
+
+[application_servers]
+192.168.0.1
+192.168.0.2
+
+[ubuntu_servers]
+10.10.0.3
+10.10.0.4
+10.10.0.7
+

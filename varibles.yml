@@ -2,30 +2,35 @@
  - hosts: webservers 
    become: yes
    gather_facts: yes
+   vars:
+    ubuntuwebserver: apache2
+    redhatwebserver: httpd 
+
+
    tasks: 
    - name: i want ping my all nodes 
      ping: 
 
    - name: install apche2
      apt: 
-      name: apache2
+      name: "{{ubuntuwebserver}}"
       state: present 
      when: ansible_os_family=="Debian"
 
    - name: service  webserver
      service: 
-      name: apache2  
+      name: "{{ubuntuwebserver}}"  
       state: started 
      when: ansible_os_family=="Debian"
 
    - name: install httpd 
      yum: 
-      name: httpd 
+      name: "{{redhatwebserver}}"
       state: present
      when: ansible_os_family=="RedHat"
       
    - name: service httpd 
      service: 
-      name: httpd 
+      name: "{{redhatwebserver}}" 
       state: started 
      when: ansible_os_family=="RedHat"
