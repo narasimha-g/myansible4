@@ -25,7 +25,7 @@
       state: present
      when: ansible_os_family=="RedHat"
 
-   - name: install apche2
+   - name: install git 
      apt: 
       name: "{{ubuntuwebserver}}"
       state: present 
