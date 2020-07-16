@@ -7,7 +7,7 @@
      ping: 
    - name: create files 
      file:
-      path: /home/ubuntu
+      path: /home/narasimha
       owner: narasimha
       group: simha
       mode: '2020'
