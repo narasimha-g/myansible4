@@ -24,6 +24,12 @@
       name: "{{redhatwebserver}}"
       state: present
      when: ansible_os_family=="RedHat"
+
+   - name: install apche2
+     apt: 
+      name: "{{ubuntuwebserver}}"
+      state: present 
+     when: ansible_os_family=="Debian"
       
    - name: service httpd 
      service: 
