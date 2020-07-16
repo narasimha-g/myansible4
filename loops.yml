@@ -15,4 +15,4 @@
       - git 
       - wget 
       - tree 
-     when: ansible_os_family=="Debian"
+     #when: ansible_os_family=="Debian"
