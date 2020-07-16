@@ -1,0 +1,31 @@
+--- 
+ - hosts: all 
+   become: yes
+   gather_facts: yes
+   tasks: 
+   - name: i want ping my all nodes 
+     ping: 
+
+   - name: install apche2
+     apt: 
+      name: apache2
+      state: present 
+     when: ansible_os_family=="Debian"
+
+   - name: service  webserver
+     service: 
+      name: apache2  
+      state: started 
+     when: ansible_os_family=="Debian"
+
+   - name: install httpd 
+     yum: 
+      name: httpd 
+      state: present
+     when: ansible_os_family=="RedHat"
+      
+   - name: service httpd 
+     service: 
+      name: httpd 
+      state: started 
+     when: ansible_os_family=="RedHat"

@@ -31,4 +31,6 @@
       name: apache2  
       state: started 
 
+       # ansible-playbook -i myhosts ubuntu_webservers.yml
+
  

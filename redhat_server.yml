@@ -14,3 +14,6 @@
      service: 
       name: httpd 
       state: started 
+
+
+      # ansible-playbook -i myhosts redhat_server.yml
