@@ -1,0 +1,13 @@
+--- 
+ - hosts: all 
+   become: yes
+   gather_facts: yes
+   tasks: 
+   - name: i want ping my all nodes 
+     ping: 
+   - name: create files 
+     file:
+      path: /home/ubuntu
+      owner: narasimha
+      group: simha
+      mode: '2020'
