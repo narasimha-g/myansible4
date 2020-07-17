@@ -1,0 +1,15 @@
+---
+- hosts: webservers
+  become: yes
+  gather_facts: yes
+  tasks:
+  - name: i want launch ec2 instance 
+    ec2:
+      key_name: oregon
+      instance_type: t2.micro
+      image: ami-0d41b708047883917
+      wait: yes
+      group: ALL 
+      count: 3
+      vpc_subnet_id: subnet-fcbb64a1
+      assign_public_ip: yes
