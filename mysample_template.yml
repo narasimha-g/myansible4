@@ -1,0 +1,18 @@
+---
+- hosts: webservers
+  become: yes
+  gather_facts: yes
+  tasks:
+  - name: i want to install webserver on ubuntu16
+    apt:
+     name: apache2
+     state: present
+    notify: startwebserver
+    when: ansible_os_family =="Debian"
+
+  - name: copy the index.j2 file int index.html
+    template:
+      src: /my_templates/index.j2
+      dest: /var/www/html/index.html
+    notify: startwebserver
+    when: ansible_os_family =="Debian"
