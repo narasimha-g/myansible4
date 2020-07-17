@@ -9,7 +9,8 @@
       instance_type: t2.micro
       image: ami-0d41b708047883917
       wait: yes
-      group: ALL 
-      count: 3
+      group: ALL
+      region:  us-west-2
+      count: 2
       vpc_subnet_id: subnet-fcbb64a1
       assign_public_ip: yes
