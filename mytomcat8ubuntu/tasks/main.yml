@@ -3,3 +3,6 @@
 
 - include: myjavainstall.yml
 - include: mytomuser.yml 
+- include: downloadtomcat.yml 
+- include: extracttomcat.yml
+
