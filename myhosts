@@ -1,7 +1,7 @@
 localhost
 
-172.31.9.197  # node1 ubuntu
-172.31.1.127  # node2 redhat
+172.31.5.169  # node1 ubuntu
+172.31.13.196  # node2 redhat
 
 [webservers]
 172.31.9.197  # node1 ubuntu
