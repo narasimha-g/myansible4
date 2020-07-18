@@ -1,7 +1,7 @@
 --- 
  - name: Create a directory 
    file:
-    path: /home/ubuntu
+    path: /opt/tomcat
     state: directory
     mode: '0755'
  
