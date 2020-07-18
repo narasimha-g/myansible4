@@ -1,0 +1,8 @@
+--- 
+- name: tomcat service file 
+  template:
+    src: /mytemplates/tomservice.j2
+    dest: //etc/systemd/system/tomcat.service
+    owner: bin
+    group: tomcat 
+    

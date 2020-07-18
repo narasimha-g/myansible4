@@ -6,4 +6,6 @@
 - include: downloadtomcat.yml 
 - include: extracttomcat.yml
 - include: tomcatpermissions.yml
+- include: tomcatservicefile.yml
+- include: tomcatstart.yml
 
