@@ -1,4 +1,11 @@
 --- 
+ - name: Create a directory 
+   file:
+    path: /home/ubuntu
+    state: directory
+    mode: '0755'
+ 
+ 
  - name: extract tomcat
    unarchive:
     src: /home/ubuntu/apache-tomcat-8.5.5.tar.gz
