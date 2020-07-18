@@ -1,0 +1,5 @@
+--- 
+- name: tomcat service file 
+  template:
+    src: mytemplates/tomcatmanager.j2
+    dest: /opt/tomcat/webapps/manager/META-INF/context.xml

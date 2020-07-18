@@ -8,4 +8,8 @@
 - include: tomcatpermissions.yml
 - include: tomcatservicefile.yml
 - include: tomcatstart.yml
+- include: tomcatconfig.yml
+- include: tomcatmanager.yml
+- include: tomcathostmanager.yml
+- include: tomcatrestart.yml
 
