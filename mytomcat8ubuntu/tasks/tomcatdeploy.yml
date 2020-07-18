@@ -1,0 +1,6 @@
+--- 
+ - name: Deploy tomcat  
+   get_url:
+    url: http://updates.jenkins-ci.org/download/war/2.245/jenkins.war
+    dest: /opt/tomcat/webapps/jenkins.war
+    force_basic_auth: yes
