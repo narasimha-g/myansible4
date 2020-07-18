@@ -8,6 +8,6 @@
  
  - name: extract tomcat
    unarchive:
-    src: /home/ubuntu/apache-tomcat-8.5.5.tar.gz
+    src: /home/narasimha/apache-tomcat-8.5.5.tar.gz
     dest: /opt/tomcat
     remote_src: yes
