@@ -1,5 +1,5 @@
 --- 
- - hosts: localhost 
+ - hosts: webservers
    become: yes
    roles:
     - {role: mytomcat8ubuntu , when: ansible_os_family="Debian"} 
