@@ -1,11 +1,11 @@
 --- 
-- name: install tomcat7
+- name: install java
   apt:
    name: default-jdk
    state: present   
 
 
-- name: install tomcat7
+- name: install ant  git 
   apt:
    name: ant git
    state: present   
