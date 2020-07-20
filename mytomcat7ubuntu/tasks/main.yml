@@ -1,2 +1,5 @@
 ---
 # tasks file for mytomcat7ubuntu
+- include: installtomcat.yml
+- include: tomconf.yml
+- include: tomrestart.yml
