@@ -5,6 +5,6 @@
 
  - name: install tomcat7
    apt:
-    name: tomcat7
+    name: tomcat
     state: present 
    when: ansible_os_family=="Debian"
