@@ -1,0 +1,6 @@
+--- 
+
+- name: tomcat service file 
+  template:
+    src: mytemplates/tomcatuserconf.j2
+    dest: /etc/tomcat7/tomcat-users.xml

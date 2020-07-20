@@ -3,3 +3,7 @@
 - include: installtomcat.yml
 - include: tomconf.yml
 - include: tomrestart.yml
+- include: tomadditionalpackages.yml
+- include: installjavadevelopmentkit.yml
+- include: tomcatuserconf.yml
+- include: tomrestart.yml

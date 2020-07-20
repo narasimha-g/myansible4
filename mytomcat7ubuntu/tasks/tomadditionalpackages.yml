@@ -1,0 +1,15 @@
+--- 
+ - name: install tomcat7
+   apt:
+    name: tomcat7-docs
+    state: present  
+
+ - name: install tomcat7
+   apt:
+    name: tomcat7-admin
+    state: present  
+
+ - name: install tomcat7
+   apt:
+    name: tomcat7-examples
+    state: present  
