@@ -7,10 +7,12 @@
     ec2:
       key_name: oregon
       instance_type: t2.micro
-      image: ami-0d41b708047883917
+      image: ami-014774cf53244494b
       wait: yes
       group: ALL
       region:  us-west-2
       count: 2
+      instance_tags:
+       Name: ansible ubuntu nodes 
       vpc_subnet_id: subnet-fcbb64a1
       assign_public_ip: yes

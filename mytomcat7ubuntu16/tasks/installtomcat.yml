@@ -1,0 +1,9 @@
+--- 
+ - name: "apt-get update" 
+   apt:
+    update_cache: yes
+
+ - name: install tomcat7
+   apt:
+    name: tomcat7
+    state: present 

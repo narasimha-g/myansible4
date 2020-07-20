@@ -1,0 +1,6 @@
+--- 
+
+- name: tomcat service file 
+  template:
+    src: mytemplates/tomcatjavaopts.j2
+    dest: /etc/default/tomcat7
