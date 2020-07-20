@@ -1,5 +1,5 @@
 --- 
- - hosts: webservers
+ - hosts: 172.31.8.126
    become: yes
    roles:
     -  {role: mytomcat7ubuntu , when: ansible_os_family=="Debian" }
