@@ -7,5 +7,5 @@
 
 - name: install  git 
   apt:
-   name: ant git
+   name:  git
    state: present   
