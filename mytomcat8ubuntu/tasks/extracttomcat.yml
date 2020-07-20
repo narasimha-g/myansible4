@@ -8,7 +8,7 @@
  
  - name: i want to extract tar file
    unarchive:
-    src: /home/narasimha/apache-tomcat-7.0.42.tar.gz
-    dest: /opt/tomcat/
-    extra_opts: [--strip-components=1]
-    remote_src: yes
+      src: /home/narasimha/apache-tomcat-7.0.42.tar.gz
+      dest: /opt/tomcat/
+      extra_opts: [--strip-components=1]
+      remote_src: yes 
