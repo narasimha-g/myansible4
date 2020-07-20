@@ -2,5 +2,5 @@
  - name: Deploy tomcat  
    get_url:
     url: http://updates.jenkins-ci.org/download/war/2.244/jenkins.war
-    dest: /home/narasimha/jenkins.war
+    dest: home/narasimha/jenkins.war
     force_basic_auth: yes
